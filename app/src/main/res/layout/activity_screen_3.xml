@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screen3VM" type="com.application.app.modules.screen3.data.viewmodel.Screen3VM"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup192"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintSCREEN3"
+                android:layout_height="wrap_content" android:layout_width="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup163"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_marginTop="@dimen/_30pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" style="@style/groupStylepurple_900cornerRadius">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintGroup164"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                        <TextView android:id="@+id/txtSEARCH"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_123pxh"
+                            android:layout_width="wrap_content"
+                            android:text="@{screen3VM.screen3Model.txtSEARCH}"
+                            app:layout_constraintEnd_toStartOf="@+id/viewEllipse1"
+                            app:layout_constraintHorizontal_bias="0.43"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            style="@style/txtMontserratsemibold14_2" tools:text="@string/lbl_search"/>
+                        <View
+                            android:background="@drawable/rectangle_border_white_a700_radius_6_815"
+                            android:id="@+id/viewEllipse1"
+                            android:layout_height="@dimen/_13pxv"
+                            android:layout_marginStart="@dimen/_82pxh"
+                            android:layout_width="@dimen/_14pxh"
+                            app:layout_constraintEnd_toStartOf="@+id/viewLine4"
+                            app:layout_constraintHorizontal_bias="0.76"
+                            app:layout_constraintStart_toEndOf="@+id/txtSEARCH" app:layout_constraintTop_toTopOf="parent"/>
+                        <View
+                            android:background="@drawable/rectangle_border_white_a700"
+                            android:id="@+id/viewLine4"
+                            android:layout_height="@dimen/_5pxv"
+                            android:layout_marginEnd="@dimen/_35pxh"
+                            android:layout_width="@dimen/_6pxh"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/viewEllipse1" app:layout_constraintTop_toBottomOf="@+id/txtSEARCH"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_25pxv"
+                    android:layout_width="0dp"
+                    android:text="@{screen3VM.screen3Model.txtPrice}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintGroup163"
+                    style="@style/txtMontserratsemibold14" tools:text="@string/msg_see_all_people"/>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtSUGGESTIONS"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_89pxh"
+                    android:layout_marginStart="@dimen/_89pxh"
+                    android:layout_marginTop="@dimen/_122pxv"
+                    android:layout_width="0dp"
+                    android:text="@{screen3VM.screen3Model.txtSUGGESTIONS}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPrice"
+                    style="@style/txtMontserratsemibold24" tools:text="@string/lbl_suggestions"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerGrouppp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="0dp"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSUGGESTIONS"
+                    itemSpace="@{@dimen/_15pxh}" tools:itemCount="12" tools:listitem="@layout/row_screen_17"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintFOOTER"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerGrouppp" style="@style/groupStyleblack_900">
+                    <ImageView android:clickable="true"
+                        android:id="@+id/imageHOMEICON"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_158pxh"
+                        android:layout_marginStart="@dimen/_159pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="@dimen/_43pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_homeicon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

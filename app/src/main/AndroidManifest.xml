@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.application.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.application.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.application.app.modules.screen11.ui.Screen11Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen13.ui.Screen13Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen9.ui.Screen9Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen14.ui.Screen14Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen16.ui.Screen16Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen6.ui.Screen6Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen8.ui.Screen8Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen1.ui.Screen1Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.app.modules.screen2.ui.Screen2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen4.ui.Screen4Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen10.ui.Screen10Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen12.ui.Screen12Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen3.ui.Screen3Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen5.ui.Screen5Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.screen15.ui.Screen15Activity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

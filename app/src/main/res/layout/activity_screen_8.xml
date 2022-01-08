@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screen8VM" type="com.application.app.modules.screen8.data.viewmodel.Screen8VM"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup120"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintSCREEN8"
+                android:layout_height="wrap_content" android:layout_width="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup106"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" style="@style/groupStylepurple_800">
+                    <TextView android:gravity="start"
+                        android:id="@+id/txtPOETICULE"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_30pxv"
+                        android:layout_width="0dp"
+                        android:text="@{screen8VM.screen8Model.txtPOETICULE}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        style="@style/txtMontserratbold36" tools:text="@string/lbl_poeticule"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintGroup107"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_24pxv"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtPOETICULE">
+                        <View
+                            android:background="@drawable/rectangle_border_white_a700_radius_8_825"
+                            android:id="@+id/viewEllipse1"
+                            android:layout_height="@dimen/_17pxh"
+                            android:layout_width="@dimen/_17pxh"
+                            app:layout_constraintEnd_toStartOf="@+id/viewLine4"
+                            app:layout_constraintHorizontal_bias="0.74"
+                            app:layout_constraintStart_toEndOf="@+id/lineLine1" app:layout_constraintTop_toTopOf="parent"/>
+                        <View android:background="@color/white_A700"
+                            android:id="@+id/lineLine1"
+                            android:layout_height="@dimen/_4pxv"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_234pxh"
+                            android:layout_marginStart="@dimen/_20pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_width="@dimen/_24pxh"
+                            app:layout_constraintEnd_toStartOf="@+id/viewEllipse1"
+                            app:layout_constraintHorizontal_bias="0.06"
+                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                        <ImageView android:id="@+id/imageNOTIFICATIONIC"
+                            android:layout_height="@dimen/_20pxh"
+                            android:layout_marginEnd="@dimen/_14pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_width="@dimen/_15pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_notificationic_2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.38"
+                            app:layout_constraintStart_toEndOf="@+id/viewLine4" app:layout_constraintTop_toTopOf="parent"/>
+                        <View android:background="@color/white_A700"
+                            android:id="@+id/lineLine2"
+                            android:layout_height="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_234pxh"
+                            android:layout_marginStart="@dimen/_20pxh"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_width="@dimen/_24pxh"
+                            app:layout_constraintEnd_toStartOf="@+id/viewEllipse1"
+                            app:layout_constraintHorizontal_bias="0.06"
+                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/lineLine1"/>
+                        <View
+                            android:background="@drawable/rectangle_border_white_a700"
+                            android:id="@+id/viewLine4"
+                            android:layout_height="@dimen/_7pxv"
+                            android:layout_marginEnd="@dimen/_30pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="@dimen/_7pxh"
+                            app:layout_constraintEnd_toStartOf="@+id/imageNOTIFICATIONIC"
+                            app:layout_constraintStart_toEndOf="@+id/viewEllipse1" app:layout_constraintTop_toBottomOf="@+id/lineLine2"/>
+                        <View android:background="@color/white_A700"
+                            android:id="@+id/lineLine3"
+                            android:layout_height="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_247pxh"
+                            android:layout_marginStart="@dimen/_20pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_width="@dimen/_24pxh"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/viewLine4"
+                            app:layout_constraintHorizontal_bias="0.06"
+                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/viewEllipse1"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtNotification"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="0dp"
+                    android:text="@{screen8VM.screen8Model.txtNotification}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintGroup106"
+                    style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup111"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtNotification">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_39_5"
+                        android:id="@+id/viewEllipse16"
+                        android:layout_height="@dimen/_79pxh"
+                        android:layout_width="@dimen/_79pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNotification1"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:id="@+id/txtNotification1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen8VM.screen8Model.txtNotification1}"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewEllipse16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/viewEllipse16"
+                        app:layout_constraintTop_toTopOf="@+id/viewEllipse16"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup112"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/constraintGroup111">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_39_5"
+                        android:id="@+id/viewEllipse18"
+                        android:layout_height="@dimen/_79pxh"
+                        android:layout_width="@dimen/_79pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNotification2"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:id="@+id/txtNotification2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen8VM.screen8Model.txtNotification2}"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewEllipse18"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/viewEllipse18"
+                        app:layout_constraintTop_toTopOf="@+id/viewEllipse18"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup113"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/constraintGroup112">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_39_5"
+                        android:id="@+id/viewEllipse19"
+                        android:layout_height="@dimen/_79pxh"
+                        android:layout_width="@dimen/_79pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNotification3"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:id="@+id/txtNotification3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen8VM.screen8Model.txtNotification3}"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewEllipse19"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/viewEllipse19"
+                        app:layout_constraintTop_toTopOf="@+id/viewEllipse19"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup114"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/constraintGroup113">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_39_5"
+                        android:id="@+id/viewEllipse20"
+                        android:layout_height="@dimen/_79pxh"
+                        android:layout_width="@dimen/_79pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNotification4"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:id="@+id/txtNotification4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen8VM.screen8Model.txtNotification4}"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewEllipse20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/viewEllipse20"
+                        app:layout_constraintTop_toTopOf="@+id/viewEllipse20"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup115"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/constraintGroup114">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_39_5"
+                        android:id="@+id/viewEllipse21"
+                        android:layout_height="@dimen/_79pxh"
+                        android:layout_width="@dimen/_79pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNotification5"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:id="@+id/txtNotification5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen8VM.screen8Model.txtNotification5}"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewEllipse21"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/viewEllipse21"
+                        app:layout_constraintTop_toTopOf="@+id/viewEllipse21"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintFOOTER"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_52pxv"
+                    android:layout_marginTop="@dimen/_64pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraintGroup116"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/constraintGroup115" style="@style/groupStyleblack_900">
+                    <ImageView android:clickable="true"
+                        android:id="@+id/imageHOMEICON"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_158pxh"
+                        android:layout_marginStart="@dimen/_159pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="@dimen/_43pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_homeicon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup116"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/constraintGroup115">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_39_5"
+                        android:id="@+id/viewEllipse22"
+                        android:layout_height="@dimen/_79pxh"
+                        android:layout_width="@dimen/_79pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNotification6"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:id="@+id/txtNotification6"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen8VM.screen8Model.txtNotification6}"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewEllipse22"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/viewEllipse22"
+                        app:layout_constraintTop_toTopOf="@+id/viewEllipse22"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup117"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/constraintGroup116">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_39_5"
+                        android:id="@+id/viewEllipse23"
+                        android:layout_height="@dimen/_79pxh"
+                        android:layout_width="@dimen/_79pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNotification7"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:id="@+id/txtNotification7"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen8VM.screen8Model.txtNotification7}"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewEllipse23"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/viewEllipse23"
+                        app:layout_constraintTop_toTopOf="@+id/viewEllipse23"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup118"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/constraintGroup117">
+                    <View
+                        android:background="@drawable/rectangle_bg_gray_400_radius_39_5"
+                        android:id="@+id/viewEllipse24"
+                        android:layout_height="@dimen/_79pxh"
+                        android:layout_width="@dimen/_79pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNotification8"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:id="@+id/txtNotification8"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen8VM.screen8Model.txtNotification8}"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewEllipse24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/viewEllipse24"
+                        app:layout_constraintTop_toTopOf="@+id/viewEllipse24"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_notification"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

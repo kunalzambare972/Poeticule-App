@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screen17RowModel" type="com.application.app.modules.screen3.data.model.Screen17RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <View
+            android:background="@drawable/rectangle_bg_gray_400_radius_27_01"
+            android:id="@+id/viewEllipse3"
+            android:layout_height="@dimen/_54pxv"
+            android:layout_width="@dimen/_53pxh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtUsername"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView android:id="@+id/imageRectangle4"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginEnd="@dimen/_2pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_100pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle4"
+            app:layout_constraintBottom_toBottomOf="@+id/viewEllipse3"
+            app:layout_constraintDimensionRatio="1.0:0.3993059"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toEndOf="@+id/txtUsername" app:layout_constraintTop_toTopOf="@+id/viewEllipse3"/>
+        <TextView android:id="@+id/txtUsername"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_77pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="wrap_content"
+            android:text="@{screen17RowModel.txtUsername}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectangle4"
+            app:layout_constraintEnd_toStartOf="@+id/imageRectangle4"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toEndOf="@+id/viewEllipse3"
+            app:layout_constraintTop_toTopOf="@+id/imageRectangle4"
+            style="@style/txtMontserratsemibold14_3" tools:text="@string/lbl_username"/>
+        <TextView android:gravity="start" android:id="@+id/txtFOLLOW"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="0dp"
+            android:text="@{screen17RowModel.txtFOLLOW}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectangle4"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectangle4"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle4"
+            app:layout_constraintTop_toTopOf="@+id/imageRectangle4"
+            style="@style/txtMontserratbold14_1" tools:text="@string/lbl_follow"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screen12VM" type="com.application.app.modules.screen12.data.viewmodel.Screen12VM"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup89"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup86"
+                android:layout_height="wrap_content" android:layout_width="match_parent">
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageTextxsecond"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="@dimen/_27pxh"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_x1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtUglyLove" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:id="@+id/txtUglyLove"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_width="wrap_content"
+                    android:text="@{screen12VM.screen12Model.txtUglyLove}"
+                    app:layout_constraintEnd_toStartOf="@+id/imageTextxsecond"
+                    app:layout_constraintHorizontal_bias="0.09"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageTextxsecond"
+                    style="@style/txtMontserratbold24" tools:text="@string/lbl_ugly_love2"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup87"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtUglyLove">
+                    <View android:background="@color/white_A700"
+                        android:id="@+id/lineLine1"
+                        android:layout_height="@dimen/_4pxv"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_width="@dimen/_24pxh"
+                        app:layout_constraintEnd_toStartOf="@+id/txtByCollenHover"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView android:clickable="true"
+                        android:id="@+id/txtByCollenHover"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_140pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{screen12VM.screen12Model.txtByCollenHover}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.44"
+                        app:layout_constraintStart_toEndOf="@+id/lineLine1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        style="@style/txtMontserratbold18" tools:text="@string/lbl_by_collen_hover"/>
+                    <View android:background="@color/white_A700"
+                        android:id="@+id/lineLine2"
+                        android:layout_height="@dimen/_4pxv"
+                        android:layout_marginEnd="@dimen/_140pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="@dimen/_24pxh"
+                        app:layout_constraintEnd_toStartOf="@+id/txtByCollenHover"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/lineLine1"/>
+                    <View android:background="@color/white_A700"
+                        android:id="@+id/lineLine3"
+                        android:layout_height="@dimen/_4pxv"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginEnd="@dimen/_140pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="@dimen/_24pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtByCollenHover"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/lineLine2"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="0dp"
+                    android:text="@{screen12VM.screen12Model.txtDescription}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintGroup87"
+                    style="@style/txtMontserratbold14" tools:text="@string/msg_you_look_up_and"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintFOOTER"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50pxv"
+                    android:layout_width="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDescription" style="@style/groupStyleblack_900">
+                    <ImageView android:clickable="true"
+                        android:id="@+id/imageHOMEICON"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_158pxh"
+                        android:layout_marginStart="@dimen/_159pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="@dimen/_43pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_homeicon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
